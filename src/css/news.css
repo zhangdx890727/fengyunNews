@@ -1,0 +1,668 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+.ion-android-more-vertical{
+    margin-right: 1rem;
+}
+/*导航条>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.news-bar-side{
+    height: 4.4rem;
+    width: 336rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.news-bar-side button{
+    color: black;
+}
+
+.tabs-icon-top div a span{
+    font-size: 1.2rem;
+}
+
+/*logo>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.logo img{
+    margin-top: .5rem;
+    height: 3.4rem;
+}
+
+/*下拉列表>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.reversalBtnDiv{
+    background-color: white;
+    position: absolute;
+    padding-bottom: 0;
+    height: 0;
+    top: 4.4rem;
+    z-index: 999;
+    transition: all 800ms;
+
+}
+.reversalBar{
+    display: flex;
+    justify-content: space-between
+}
+.reversalContent{
+    position: absolute;
+    top: 4.4rem;
+}
+.reversalContent button{
+    width: 30%;
+    margin-left: 2.5%;
+    margin-top: 1rem;
+    float: left;
+    background-color: #f4f4f4;
+}
+
+
+/*轮播图>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.topCarouselImg{
+    height: 20rem;
+    width: 100%;
+}
+.topCarousel{
+    position: relative;
+    width: 100%;
+}
+.topCarousel .slider-pager{
+    text-align: right;
+    height: 3rem;
+}
+
+.topCarousel .slider-pager-page{
+    width: .1rem;
+}
+.topCarousel .ion-record::before{
+    content: '.';
+    font-size: 3rem;
+    color: white;
+}
+.topCarousel .ion-record{
+    position: relative;
+    bottom: -1rem;
+    right: 1rem;
+}
+.slideBottomDiv{
+    position: absolute;
+    padding-left: 1.5rem;
+    bottom: .6rem;
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    height: 3rem;
+    background-color: rgba(0,0,0,.4);
+    color: white;
+}
+
+.buttons-left button {
+    margin-right: 2rem;
+}
+
+.news-bar-side .doSameNews:nth-child(3){
+    color: red;
+}
+/*新闻列表>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.list-item{
+    padding: 0;
+}
+.list-item .firstDiv{
+    height:12rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.list-item .firstDiv img{
+    width: 30%;
+    height: 10rem;
+}
+.list-item .firstDiv .itemSpanDiv1{
+    width: 65%;
+    position: relative;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+.list-item .itemSpanDiv1 .sourceSpan1{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 1.6rem;
+    color: rgb(172, 172, 172);
+}
+.list-item .itemSpanDiv1 .replyCountSpan1{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 1.6rem;
+    color: rgb(172, 172, 172);
+}
+
+
+.list-item .secondDiv{
+    padding: 1rem;
+}
+.list-item .secondDiv .itemTitleSpan{
+    display: block;
+    font-size: 2rem;
+    color: gray;
+    margin: 1rem 0;
+}
+.list-item .secondDiv .itemImgDiv{
+    display: flex;
+    justify-content: space-between;
+}
+.list-item .secondDiv .itemImgDiv img{
+    width: 30%;
+    height: 10rem;
+}
+.list-item .secondDiv .itemImgDiv2 img{
+    width: 100%;
+    height: 13rem;
+}
+.list-item .secondDiv .itemSpanDiv2{
+    font-size: 2rem;
+    line-height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(172, 172, 172);
+    margin-top: 1rem;
+
+}
+
+/*专题中转页面>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.newsMiddleTop{
+    width: 100%;
+}
+.newsMiddleSub{
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.newsMiddleSub .button{
+    height: 2.5rem;
+    line-height: 2.5rem;
+    margin: .5rem 1.45rem;
+    font-size: 1.2rem;
+    border:.1rem solid lightgray;
+    padding: .3rem;
+    border-radius: 3rem;
+}
+
+
+/*详情页>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.newsDetails{
+    margin:1.5rem;
+}
+.newsDetails h3{
+text-align: center;
+}
+.newsDetailsSpan{
+    padding-bottom: 2rem;
+    border-bottom: dashed .2rem lightgray;
+    display: flex;
+    justify-content: space-between;
+}
+.newsDetailsBody{
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+.newsDetailsBody img{
+    display: block;
+    margin: 1rem auto;
+}
+.item-input-inset{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: white
+}
+.item-input-inset .item-input-wrapper{
+    background: white;
+
+}
+.item-input-inset .item-input-wrapper input{
+    border-bottom: .1rem solid lightgrey;
+}
+
+.item-input-inset .item-input-wrapper input:focus{
+    border-bottom: .1rem solid red;
+}
+
+/*搜索页>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.searcher{
+    display: block;
+    margin: 1rem;
+    border: lightgrey solid .1rem;
+}
+
+
+/*直播页>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*上下翻页的标题栏*/
+
+.liveItemTop{
+    padding: 1rem;
+    margin-bottom: .5rem;
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.liveItemTop button:nth-child(1){
+    color: #00fff7;
+    font-size: 1.6rem;
+}
+.liveItemTop button:nth-last-child(1){
+    font-size: 1.4rem;
+}
+.liveItemTop .col-80{
+    height: 3rem;
+    line-height: 3rem;
+    padding-left: 1rem;
+    position: relative;
+    overflow:hidden;
+}
+.liveItemTop .col-80 .pContent{
+    height: 3rem;
+    line-height: 3rem;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    position: absolute;
+    top:0rem;
+}
+.liveItemTop .col-80 .pContent p{
+    margin-bottom: 0;
+}
+/*左右滑动导航栏*/
+.subliveItem{
+    height: 11rem;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+.subliveItem div{
+    display: inline-block;
+    text-align: center;
+    padding: 1rem;
+}
+.subliveItem div img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 3rem;
+}
+.subliveItem div p{
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.2rem;
+}
+
+/*直播列表*/
+
+.liveViewDiv{
+    position: relative;
+    background-color: #e6e6e6;
+    width: 100%;
+    height: 16.2rem;
+}
+.liveViewDiv .liveViewImg{
+    width: 100vw;
+}
+.sourceinfo{
+    display: block;
+    height: 3rem;
+    border-radius: 1.5rem;
+    background-color: rgba(92, 92, 92, 0.49);
+    position: absolute;
+    left:2rem;
+    top:2rem;
+}
+.sourceinfo img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+
+}
+.sourceinfo span{
+    padding: 0 1rem;
+    display: inline-block;
+    height: 3rem;
+    line-height: 3rem;
+    vertical-align: middle;
+    position: relative;
+    bottom:1rem;
+    color: white;
+}
+
+.liveViewDiv p{
+    width: 100vw;
+    position: absolute;
+    bottom: 1rem;
+    padding:2rem;
+    color: white;
+    font-size: 1.8rem;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.liveViewDiv .liveStatus{
+    position: absolute;
+    padding-left: 2rem;
+    bottom:1rem;
+    color: white;
+}
+.liveViewDiv .liveStatus .liveStatus1{
+    padding: .2rem;
+    font-size: 1.2rem;
+    background-color: red;
+}
+.liveViewDiv .liveStatus .liveStatus2{
+    padding: .2rem;
+    font-size: 1.2rem;
+    background-color: #6e6e6e;
+}
+.liveViewDiv .liveStatus .liveStatusCount{
+    border: .1rem solid ;
+    background-color: rgba(0, 0, 0, 0.35);
+    font-size: 1.2rem;
+    border-radius: .2rem;
+    padding: .2rem;
+}
+.liveViewDiv .liveViewPlan{
+    position: absolute;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0)), to(rgba(0, 0, 0,.4)));
+    bottom: .5rem;
+    width: 100vw;
+    height: 8rem;
+}
+/*加载动画*/
+.loading-container {
+    background-color: white;
+    margin: 4.4rem 0;
+}
+.backdrop-loading{
+    background-color: rgba(255,255,255,0);
+}
+
+/*话题页面*/
+
+.topicContent{
+    background-color: #f4f4f4;
+}
+.topicTop{
+    height: 24vw;
+    position: relative;
+    padding-bottom: 1.2rem;
+    margin: 1rem 1rem 0 1rem;
+    box-shadow: 0 -0.1rem .3rem rgba(0,0,0,.3);
+}
+.topicTop .col-20{
+    display: inline-block;
+    background-color: white;
+    margin-top: 1rem;
+    height: 20vw;
+    width: 20vw;
+    text-align: center;
+}
+.topicTop .col-20 img{
+     width: 12vw;
+     height: 12vw;
+ }
+.topicTop .col-20 p{
+    margin-top: -2.3rem;
+}
+.topicTop+.icon{
+    position: relative;
+    top:-1.1rem;
+    height: 1.2rem;
+    padding: 0;
+    margin: 0 1rem;
+    border:0;
+    border-radius: .5rem;
+    min-height: 1.2rem;
+    background-color: white;
+    color: #999;
+}
+.topicTop+.icon::before{
+    height: 1rem;
+    line-height: 1rem;
+}
+.topicTop+.icon::after{
+    height: 0;
+}
+/*卡片列表*/
+.cardList{
+    margin: 0 1rem 1rem 1rem;
+    position: relative;
+}
+.cardList .cardListTop{
+    height: 4rem;
+}
+.cardList .cardListTop p{
+    padding-top: 1rem;
+    line-height: 4rem;
+    padding-left: 8rem;
+}
+.cardList .cardListImg{
+    width: 100%;
+    vertical-align : bottom
+}
+.cardList .cardListPic{
+    background-color: white;
+    position: absolute;
+    width: 6.6rem;
+    height: 6.6rem;
+    border-radius: 3.3rem;
+    top:1rem;
+    left:1rem;
+}
+.cardList .cardListPic img{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 3rem;
+}
+.cardList .cardListP{
+    padding: 1rem;
+    margin: 0;
+    line-height: 2.4rem;
+    letter-spacing: .4rem;
+}
+
+.cardList .cardListSpan{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.cardList .cardListSpan div span{
+    display: inline-block;
+    line-height: 3rem;
+}
+.cardList .cardListSpan div > span + span:before{
+    content: '/';
+    padding: 0 .5rem;
+    color: #999;
+}
+.cardList .cardListSpan div > span + span{
+    color: #999;
+}
+.cardList .cardListSpan div > span{
+    color: deepskyblue;
+}
+.cardList .cardListSpan button{
+    border-radius: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.bar-assertive{
+    background-position: top;
+}
+
+/*我的页面*/
+.ion-android-settings{
+    font-size: 1.6rem;
+    /*padding-right: 1rem;*/
+    margin-right: 1rem;
+}
+.button.button-clear.button-small.icon.ion-android-settings:before{
+    line-height: 2.6rem;
+    font-size: 2rem;
+    padding-right:.8rem ;
+}
+.mineSubhead{
+    height:12.4rem;
+    margin-top: 4.4rem;
+    border-bottom: .1rem solid lightgray;
+    background-color: #ef473a;
+    padding: 1rem
+}
+.mineLogin{
+    white-space: nowrap
+}
+.mineLogin .login{
+    width: 35vw;
+    color: red;
+    background-color: white;
+    border-radius: .5rem;
+    font-size: 1.6rem
+}
+.mineLogin a{
+    text-decoration: none;
+    color: white;
+    vertical-align: bottom;
+    padding: 0 2rem 0 0;
+}
+.mineLogin .sign{
+    font-size: 1.6rem;
+    color: white;
+    border: .1rem solid white;
+    padding:0 4rem 0 2rem;
+    border-radius: 2rem;
+    letter-spacing: .5rem
+}
+.button.button-small.button-clear.icon.ion-android-calendar::before{
+    font-size: 2.4rem;
+    padding-right: .8rem;
+}
+.otherLogin{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 1rem 1rem 1rem;
+}
+.otherLogin a{
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    text-decoration: none;
+    color: white;
+}
+.otherLogin > a + a{
+    border-left: .1rem solid white;
+}
+.attentionCard{
+    height: 4.4rem;
+    padding: .5rem;
+    margin: 1rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    line-height: 3.4rem;
+}
+.mineSubhead .card a{
+    font-size: 2rem;
+    color: gray;
+    text-decoration: none;
+}
+.attentionCard > a + a{
+    border-left: .1rem solid lightgray ;
+}
+.moreCard > a + a{
+    border-left: .1rem solid lightgray ;
+}
+.moreCard{
+    height: 8rem;
+    margin: 1rem 0;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.moreCard .col-25 .icon:before{
+    font-size: 2.5rem;
+    color: gray;
+}
+.moreCard .col-25 p:nth-child(1){
+    margin-top: 1.1rem;
+}
+.moreCard .col-25 p{
+    margin: 0;
+    color: gray;
+}
+.mineContent{
+    margin-top: 23.6rem;
+}
+.mineContent .card{
+    border: .1rem solid lightgray;
+    margin: 1rem;
+}
+.mineContent .list .item{
+    padding: 1rem;
+}
+.mineContent .list .item:before{
+    padding: .5rem 2rem;
+    font-size: 2rem;
+}
+.mineContent .item-icon-right .icon:before{
+    color: lightgray;
+    font-size: 1.6rem;
+}
+.ion-android-notifications:before{
+    color:orangered;
+}
+.ion-android-textsms:before{
+    color:red;
+}
+.ion-ios-cart:before{
+    color:orange;
+}
+.ion-social-yen:before{
+    color:crimson;
+}
+.ion-social-usd:before{
+    color:chocolate;
+}
+.ion-contrast:before{
+    color:blue;
+}
+.ion-social-pinterest:before{
+    color:purple;
+}
+.ion-android-clipboard:before{
+    color:deepskyblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

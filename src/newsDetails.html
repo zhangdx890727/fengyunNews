@@ -1,0 +1,64 @@
+<ion-view>
+
+    <ion-nav-bar class="bar-assertive" ng-click="backTop()">
+
+        <ion-nav-buttons>
+            <a ng-click="goBack()" nav-direction="back" class="button button-clear icon ion-arrow-left-c"></a>
+        </ion-nav-buttons>
+
+        <ion-nav-buttons side="right">
+        <button class="button button-clear icon ion-android-more-vertical"></button>
+        </ion-nav-buttons>
+
+    </ion-nav-bar>
+
+
+    <ion-content delegate-handle="myHandle">
+        <div class="newsDetails" ng-if="docid1">
+            <h3>{{newsDetails.detail.title}}</h3>
+
+            <div class="newsDetailsSpan">
+                <div>
+                    <button class="button button-small" ng-if="newsDetails.detail.source">{{newsDetails.detail.source}}</button>
+                    <button class="button button-small" ng-if="newsDetails.detail.articleTags">{{newsDetails.detail.articleTags}}</button>
+                </div>
+                <button class="button button-small">{{newsDetails.detail.ptime}}</button>
+            </div>
+
+
+            <div class="newsDetailsBody" ng-bind-html="newsDetails.body"></div>
+
+        </div>
+
+
+        <div ng-if="docid2">
+            <video ng-src=""></video>
+            <h1>视频</h1>
+        </div>
+
+
+        <div ng-if="docid3">
+        <h1>直播页面</h1>
+        </div>
+
+    </ion-content>
+
+
+
+    <ion-footer-bar class="item-input-inset">
+
+        <lable class="item-input-wrapper">
+            <i class="icon ion-compose placeholder-icon"></i>
+            <input class="col" type="text" placeholder="写跟帖" ng-focus="onFocus=true" ng-blur="onFocus=false">
+        </lable>
+        <div ng-if="!onFocus">
+            <button class="button button-small button-clear button-assertive icon ion-chatbox-working icon-left">{{newsDetails.detail.replyCount}}</button>
+        </div>
+        <div ng-if="!onFocus">
+            <button class="button button-small button-clear button-dark icon ion-android-share-alt"></button>
+        </div>
+
+
+
+    </ion-footer-bar>
+</ion-view>
