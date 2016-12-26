@@ -1,0 +1,43 @@
+<ion-view view-title="搜索">
+
+    <ion-nav-bar class="bar-assertive">
+
+    <ion-nav-buttons>
+        <a href="#/tasb/news" nav-direction="back" class="button button-clear"><i class="icon ion-android-arrow-back"></i></a>
+    </ion-nav-buttons>
+
+    </ion-nav-bar>
+
+    <div class="bar-subheader" style="height:25rem;margin: 1rem;margin-top: 5.4rem;border-bottom: .1rem solid lightgray ;">
+        <div style="height: 3rem;width: 100%">
+            <label class="item item-input" style="padding: 0 1rem">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="text" placeholder="请输入关键字" id="searchInput">
+                <i class="icon ion-android-expand placeholder-icon"></i>
+            </label>
+        </div>
+
+        <div style="margin-top: 1rem;display: flex;justify-content: space-between;border-bottom: .1rem solid lightgray;">
+            <h3 style="font-size: 1.6rem;color:#999;display: inline-block;line-height: 3rem;margin-bottom: 0">阅读历史</h3>
+            <a class="button button-clear button-positive">更多</a>
+        </div>
+
+        <ion-list>
+            <div style="height: 4rem" ng-repeat="num in [11,22,33]">
+                <button class="button button-clear button-dark">{{num}}</button>
+            </div>
+            <div>
+                <button class="button button-clear button-dark" style="color: #999;">近期热词</button>
+            </div>
+        </ion-list>
+
+
+
+    </div>
+
+    <ion-content style="margin-top: 26rem">
+    <button class="button searcher" ng-repeat="searcher in searchArray" ng-click="doSame()">{{searcher.hotWord}}</button>
+
+    </ion-content>
+
+</ion-view>
