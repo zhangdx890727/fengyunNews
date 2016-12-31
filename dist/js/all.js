@@ -494,7 +494,7 @@ angular.module('myApp.httpFactory',[]).factory('HttpFactory',['$http','$q',funct
             if (url){
                 var promise = $q.defer();
                 // url = "http://192.168.0.100:3000/?myUrl=" + encodeURIComponent(url);
-                url = "http://localhost:3000/?myUrl=" + encodeURIComponent(url);
+                url = "http://59.110.139.104:3000/wy?myUrl=" + encodeURIComponent(url);
                 type = type ? type:"GET";
                 $http({
                     url:url,
@@ -502,7 +502,7 @@ angular.module('myApp.httpFactory',[]).factory('HttpFactory',['$http','$q',funct
                     timeout:20000
                 }).then(function (result) {
                     result = result.data;
-                    result = JSON.parse(result);
+                    // result = JSON.parse(result);
                     // result = result[Object.keys(result)[0]];
                     promise.resolve(result);
                 },function (err) {
